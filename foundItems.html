@@ -1,0 +1,8 @@
+<div style="margin-top: 80px;">
+<ul style="padding-left: -15px;" class="list-group">
+        <li ng-repeat="item in list.items" class="list-group-item list-group-item-info">      
+          {{ item.name }}, {{ item.short_name }},{{item.description}}
+        <button ng-click="list.onRemove({index:$index});">Don't want this one!</button>
+        </li>
+</ul>
+</div>
